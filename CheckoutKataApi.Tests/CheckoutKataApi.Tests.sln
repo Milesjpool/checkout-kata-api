@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKataApi.Tests", "CheckoutKataApi.Tests.csproj", "{C5DA8232-ADD8-4285-B9DB-54F4730533CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKataApi.WebApp", "..\CheckoutKataApi.WebApp\CheckoutKataApi.WebApp.csproj", "{6CE0BE31-F400-4A1E-B716-BBAA74B1C55A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{C5DA8232-ADD8-4285-B9DB-54F4730533CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5DA8232-ADD8-4285-B9DB-54F4730533CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5DA8232-ADD8-4285-B9DB-54F4730533CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE0BE31-F400-4A1E-B716-BBAA74B1C55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE0BE31-F400-4A1E-B716-BBAA74B1C55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE0BE31-F400-4A1E-B716-BBAA74B1C55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE0BE31-F400-4A1E-B716-BBAA74B1C55A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
