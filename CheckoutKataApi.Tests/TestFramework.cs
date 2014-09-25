@@ -15,8 +15,8 @@ namespace CheckoutKataApi.Tests
         public void Get_ok_response_from_http_request()
         {
             var webRequest = WebRequest.Create("http://checkout-kata-api.local/");
-            var htmlRequest = (HttpWebResponse) webRequest.GetResponse();
-            Assert.That(htmlRequest.StatusCode, Is.EqualTo(HttpStatusCode.OK));
+            var htmlResponse = (HttpWebResponse) webRequest.GetResponse();
+            Assert.That(htmlResponse.StatusCode, Is.EqualTo(HttpStatusCode.OK));
         }
     }
 }
