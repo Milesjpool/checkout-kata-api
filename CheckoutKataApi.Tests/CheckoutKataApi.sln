@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKataApi.Tests", "Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKataApi.WebApp", "..\CheckoutKataApi.WebApp\CheckoutKataApi.WebApp.csproj", "{6CE0BE31-F400-4A1E-B716-BBAA74B1C55A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKataApi.Spec", "..\CheckoutKataApi.Spec\CheckoutKataApi.Spec.csproj", "{40ADC4BE-745C-4AAD-ABEC-D4A9D2C924B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{6CE0BE31-F400-4A1E-B716-BBAA74B1C55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CE0BE31-F400-4A1E-B716-BBAA74B1C55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CE0BE31-F400-4A1E-B716-BBAA74B1C55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40ADC4BE-745C-4AAD-ABEC-D4A9D2C924B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40ADC4BE-745C-4AAD-ABEC-D4A9D2C924B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40ADC4BE-745C-4AAD-ABEC-D4A9D2C924B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40ADC4BE-745C-4AAD-ABEC-D4A9D2C924B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
