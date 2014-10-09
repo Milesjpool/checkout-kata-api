@@ -52,7 +52,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BasketPrice.feature</DependentUpon>
     </Compile>
+    <Compile Include="Basket.cs" />
     <Compile Include="steps\BasketPriceSteps.cs" />
+    <Compile Include="steps\BasketProcessing.cs" />
+    <Compile Include="steps\Browser.cs" />
     <Compile Include="steps\WalkingSkeletonSteps.cs" />
     <Compile Include="WalkingSkeleton.feature.cs">
       <AutoGen>True</AutoGen>
