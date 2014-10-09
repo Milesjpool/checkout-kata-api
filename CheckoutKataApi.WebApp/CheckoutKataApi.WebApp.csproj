@@ -68,7 +68,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasketHandler.cs" />
+    <Compile Include="GetBasketHandler.cs" />
+    <Compile Include="PostBasketHandler.cs" />
     <Compile Include="HttpHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

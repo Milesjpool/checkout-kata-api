@@ -3,7 +3,7 @@ using System.Web;
 
 namespace CheckoutKataApi.WebApp
 {
-    public class BasketHandler : IHttpHandler
+    public class PostBasketHandler : IHttpHandler
     {
         public void ProcessRequest(HttpContext context)
         {
