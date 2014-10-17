@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Script.Serialization;
 
@@ -8,9 +9,8 @@ namespace CheckoutKataApi.WebApp
     {
         public void ProcessRequest(HttpContext context)
         {
-
-            var basket = new Basket();
-            basket.Price = 0;
+            var basketId = context.Request.RawUrl.Split('/').Last();
+            var basket = BasketStore.Fetch(basketId);
 
             var seralizer = new JavaScriptSerializer();
             var responseBody = seralizer.Serialize(basket);

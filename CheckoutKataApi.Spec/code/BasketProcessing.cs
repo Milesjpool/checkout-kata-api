@@ -2,18 +2,18 @@ using System;
 using System.IO;
 using System.Net;
 using System.Web.Script.Serialization;
+using CheckoutKataApi.Spec.code;
 using NUnit.Framework;
 
 namespace CheckoutKataApi.Spec.steps
 {
     public class BasketProcessing
     {
-        private HttpWebResponse _webResponse;
         private readonly Browser _browser = new Browser();
 
         public Uri CreateBasket(string shoppingList)
         {
-            _browser.Post(new Uri("http://checkout-kata-api.local/baskets/"));
+            _browser.Post(new Uri("http://checkout-kata-api.local/baskets/"), shoppingList);
 
             _browser.AssertStatusCodeIs(HttpStatusCode.Created);
             
@@ -36,7 +36,7 @@ namespace CheckoutKataApi.Spec.steps
 
         private Basket GetBasketObject()
         {
-            var body = _browser.GetResponseBody();
+            var body = _browser.ResponseBody;
             var basket = Deserialize(body);
             return basket;
         }

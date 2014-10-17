@@ -67,19 +67,85 @@ namespace CheckoutKataApi.Spec
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Empty Basket")]
-        [NUnit.Framework.CategoryAttribute("InProgress")]
         public virtual void EmptyBasket()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Empty Basket", new string[] {
-                        "InProgress"});
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Empty Basket", ((string[])(null)));
+#line 6
 this.ScenarioSetup(scenarioInfo);
-#line 8
+#line 7
  testRunner.Given("I have an empty basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
+#line 8
  testRunner.When("I check the price of my basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 10
+#line 9
  testRunner.Then("the result should be 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Single \'A\' in basket")]
+        public virtual void SingleAInBasket()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Single \'A\' in basket", ((string[])(null)));
+#line 11
+this.ScenarioSetup(scenarioInfo);
+#line 12
+ testRunner.Given("my basket contains \'A\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 13
+ testRunner.When("I check the price of my basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 14
+ testRunner.Then("the result should be 50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Single \'B\' in basket")]
+        public virtual void SingleBInBasket()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Single \'B\' in basket", ((string[])(null)));
+#line 16
+this.ScenarioSetup(scenarioInfo);
+#line 17
+ testRunner.Given("my basket contains \'B\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 18
+ testRunner.When("I check the price of my basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 19
+ testRunner.Then("the result should be 30", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Single \'C\' in basket")]
+        public virtual void SingleCInBasket()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Single \'C\' in basket", ((string[])(null)));
+#line 21
+this.ScenarioSetup(scenarioInfo);
+#line 22
+ testRunner.Given("my basket contains \'C\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 23
+ testRunner.When("I check the price of my basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 24
+ testRunner.Then("the result should be 20", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Single \'D\' in basket")]
+        public virtual void SingleDInBasket()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Single \'D\' in basket", ((string[])(null)));
+#line 26
+this.ScenarioSetup(scenarioInfo);
+#line 27
+ testRunner.Given("my basket contains \'D\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 28
+ testRunner.When("I check the price of my basket", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 29
+ testRunner.Then("the result should be 15", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

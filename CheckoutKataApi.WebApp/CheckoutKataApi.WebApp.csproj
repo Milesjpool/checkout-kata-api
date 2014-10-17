@@ -39,6 +39,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\CheckoutKataApi.Spec\bin\Debug\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -66,8 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basket.cs" />
+    <Compile Include="BasketStore.cs" />
     <Compile Include="GetBasketHandler.cs" />
-    <Compile Include="PostBasketHandler.cs" />
+    <Compile Include="CreateBasketHandler.cs" />
     <Compile Include="HttpHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

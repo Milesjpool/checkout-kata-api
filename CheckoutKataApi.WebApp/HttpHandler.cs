@@ -10,8 +10,7 @@ namespace CheckoutKataApi.WebApp
     {
         public void ProcessRequest(HttpContext context)
         {
-            var statusCode = HttpStatusCode.OK;
-            context.Response.StatusCode = (int) statusCode;
+            context.Response.StatusCode = (int) HttpStatusCode.OK;
         }
 
         public bool IsReusable { get; private set; }

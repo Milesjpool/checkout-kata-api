@@ -20,6 +20,12 @@ namespace CheckoutKataApi.Spec.steps
             _basketUri = _basketProcessing.CreateBasket("");
         }
 
+        [Given(@"my basket contains '(.*)'")]
+        public void GivenMyBasketContains(string items)
+        {
+            _basketUri = _basketProcessing.CreateBasket(items);
+        }
+
         [When(@"I check the price of my basket")]
         public void WhenICheckThePriceOfMyBasket()
         {
